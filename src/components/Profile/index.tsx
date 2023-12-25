@@ -1,40 +1,25 @@
-import { Grid, Typography, styled } from "@mui/material";
-// import Photo from "../../../public/assets/profile-pic.png";
-import './index.css'
+import "./index.css";
 
 const Profile = () => {
   return (
-    <ProfileContainer>
-      <PhotoContainer>
-        <img src="./assets/profile-pic.png" alt="" />
-      </PhotoContainer>
-      <Content>
-        <Typography variant="h3" sx={{ fontWeight: 600, textAlign: "center" }}>
-          Hello, I'm
-        </Typography>
-        <Typography variant="h1" sx={{ fontSize: "3rem", textAlign: "center" }}>
-          Anuj Kesarwani
-        </Typography>
-        <Typography
-          variant="h3"
-          sx={{
-            fontSize: "1.75rem",
-            marginBottom: "1rem",
-            textAlign: "center",
-          }}
-        >
-          Frontend Developer
-        </Typography>
+    <section id="profile">
+      <div className="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Anuj profile picture" />
+      </div>
+      <div className="section__text">
+        <p className="section__text__p1">Hello, I'm</p>
+        <h1 className="title">Anuj Kesarwani</h1>
+        <p className="section__text__p2">Full Stack Developer</p>
         <div className="btn-container">
           <button
             className="btn btn-color-2"
-            // onClick="window.open('./assets/resume-example.pdf')"
+            onClick={() => window.open("./assets/Resume.pdf")}
           >
             Download CV
           </button>
           <button
             className="btn btn-color-1"
-            //   onClick="location.href='./#contact'"
+            // onclick="location.href='./#contact'"
           >
             Contact Info
           </button>
@@ -53,28 +38,9 @@ const Profile = () => {
             // onclick="location.href='https://github.com/'"
           />
         </div>
-      </Content>
-    </ProfileContainer>
+      </div>
+    </section>
   );
 };
 
 export default Profile;
-
-export const ProfileContainer = styled(Grid)({
-  display: "flex",
-  justifyContent: "center",
-  gap: "5rem",
-  height: "80vh",
-});
-
-export const PhotoContainer = styled(Grid)({
-  display: "flex",
-  height: "400px",
-  width: "400px",
-  margin: "auto 0",
-});
-
-export const Content = styled(Grid)({
-  alignSelf: "center",
-  textAlign: "center",
-});
