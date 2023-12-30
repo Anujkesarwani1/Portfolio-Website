@@ -1,4 +1,3 @@
-import Contact from "../Contact";
 import "./index.css";
 
 const Project = () => {
