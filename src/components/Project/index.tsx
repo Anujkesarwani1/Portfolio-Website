@@ -100,7 +100,9 @@ const Project = () => {
         src="./assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => <Contact />}
+        onClick={() => {
+          window.location.href = "./#contact";
+        }}
       />
     </section>
   );

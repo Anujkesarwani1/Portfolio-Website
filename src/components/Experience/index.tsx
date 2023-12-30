@@ -134,7 +134,9 @@ const Experience = () => {
         src="./assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => <Project />}
+        onClick={() => {
+          window.location.href = "./#projects";
+        }}
       />
     </section>
   );
