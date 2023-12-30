@@ -24,7 +24,7 @@ const About = () => {
               <h3>Experience</h3>
               <p>
                 2+ years <br />
-                Frontend Development
+                Full Stack Developement
               </p>
             </div>
             <div className="details-container">
@@ -34,11 +34,7 @@ const About = () => {
                 className="icon"
               />
               <h3>Education</h3>
-              <p>
-                B.Sc. Bachelors Degree
-                <br />
-                M.Sc. Masters Degree
-              </p>
+              <p>B.Tech CSE. Bachelors Degree</p>
             </div>
           </div>
           <div className="text-container">

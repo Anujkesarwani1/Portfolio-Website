@@ -19,7 +19,9 @@ const Profile = () => {
           </button>
           <button
             className="btn btn-color-1"
-            // onclick="location.href='./#contact'"
+            onClick={() => {
+              window.location.href = "./#contact";
+            }}
           >
             Contact Info
           </button>
