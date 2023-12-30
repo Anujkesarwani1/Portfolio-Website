@@ -1,3 +1,4 @@
+import Project from "../Project";
 import "./index.css";
 
 const Experience = () => {
@@ -133,9 +134,7 @@ const Experience = () => {
         src="./assets/arrow.png"
         alt="Arrow icon"
         className="icon arrow"
-        onClick={() => {
-          <Experience />
-        }}
+        onClick={() => <Project />}
       />
     </section>
   );
